@@ -2,8 +2,14 @@
 
 img {
     border-radius: 25px;
+    position: relative;
 }
 
 h1, h2 {
     text-align: center;
+}
+
+.main {
+    padding: 20px;
+    border: #5a6268 1px solid;
 }
