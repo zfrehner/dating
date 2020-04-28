@@ -1,4 +1,7 @@
-/*Zach Frehner*/
+/*Zach Frehner
+4/28/2020
+styles.css
+styling for the home.html page*/
 
 img {
     border-radius: 25px;
@@ -12,4 +15,11 @@ img {
 .main {
     padding: 20px;
     border: #5a6268 1px solid;
+}
+
+.lines {
+    border-bottom: #80bdff 1px solid;
+    border-top: #80bdff 1px solid;
+    padding: 15px;
+    margin-bottom: 15px;
 }
