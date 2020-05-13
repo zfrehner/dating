@@ -14,8 +14,8 @@
 
     <!--first column-->
     <div class="row">
-        <div class="col-lg-8">
-            <div class="container left">
+        <div class="col-lg-6">
+            <div class="container">
 
     <h1>Personal Information</h1>
 
@@ -57,7 +57,7 @@
                 <input type="number" class="form-control" id="phone" name="phone">
             </div>
 
-            <button class="btn btn-primary btn-lg" role="button" id="submit" type="submit">Next</button>
+
 
     </form>
             </div>
@@ -67,11 +67,15 @@
 
 
         <!--second column-->
-        <div class="col-lg-2">
+        <div class="col-lg-6">
             <div class="container">
         <p id="privacy"><em>Note:</em> All information is protected by our <a href="#">privacy policy</a>. Profile information
         can only be viewed by others with your permission.</p>
+
     </div>
+            <div class="container">
+            <button class="btn btn-primary btn-lg" role="button" id="submit" type="submit">Next</button>
+            </div>
 
 </div>
 
