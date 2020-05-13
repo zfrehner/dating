@@ -1,0 +1,23 @@
+/*Zach Frehner*/
+
+#privacy {
+    height: 120px;
+    width: 250px;
+    margin-top: 200px;
+    margin-left: 200px;
+    background-color: lightgray;
+    color: black;
+    padding: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.btn {
+    float: right;
+}
