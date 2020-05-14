@@ -39,7 +39,7 @@ main view/entry page for the dating site-->
                 <p><em>"You would be shocked how many matches you can find on this site! You won't have to look far, and everyone
                 is really good looking!" - Melissa</em></p>
             </div>
-            <button class="btn btn-primary btn-lg" id="submit" type="submit">Creat a Profile!</button>
+            <a href="personalInfo" class="btn btn-primary btn-lg" id="submit">Creat a Profile!</a>
         </div>
     </div>
 
@@ -53,9 +53,6 @@ main view/entry page for the dating site-->
 </div>
 
 </div>
-
-
-
 
 </body>
 </html>
