@@ -9,9 +9,28 @@
     <title>Profile</title>
 </head>
 <body>
-<?php
-include "328/dating/includes/navigation.html";
-?>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Both</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <div class="container">
     <form class="form-group" id="profile" method="post" action="#">
         <h1>Profile</h1>
@@ -26,7 +45,7 @@ include "328/dating/includes/navigation.html";
                     <label class="bold" for="states">States</label>
                     <select class="bold custom-select" name="states" id="states">
                         <repeat group="{{ @states }}" value="{{ @state }}">
-                            <option value="{{ @states }}" value="{{ @state }}">{{ @state }}</option>
+                            <option  name='states' value="{{ @state }}">{{ @state }}</option>
                         </repeat>
                     </select>
                 </div>
