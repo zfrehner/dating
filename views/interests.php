@@ -44,12 +44,20 @@
                 <!--<label class="col-sm-2 control-label"></label>-->
                 <div class="col-sm-4">
 
+
                     <repeat group="{{ @indoor }}" value="{{ @activity }}">
                         <label><input type="checkbox"
                                       name="indoor[]"
-                                      value="{{ @activity }}"> {{ ucfirst(@activity) }}</label><br>
+                                      value="{{ @activity }}"> {{ ucfirst(@activity) }}
+                        <check if="{{ !empty(@selectedIndoor) && in_array(@in, @selectedIndoor) }}">checked="checked"</check>> {{ ucfirst(@activity) }}
+                        </label><br>
                     </repeat>
                 </div>
+                <span class="err">
+                    <check if="{{ isset(@errors['indoor']) }}">
+                        {{ @errors['indoor'] }}
+                    </check>
+                </span><br>
             </div>
 <h3>Outdoor Interests</h3>
             <hr>
@@ -62,9 +70,15 @@
                     <repeat group="{{ @outdoor }}" value="{{ @activity2 }}">
                         <label><input type="checkbox"
                                       name="outdoor[]"
-                                      value="{{ @activity2 }}"> {{ ucfirst(@activity2) }}</label><br>
+                                      value="{{ @activity2 }}"> {{ ucfirst(@activity2) }}
+                            <check if="{{ !empty(@selectedOutdoor) && in_array(@in, @selectedOutdoor) }}">checked="checked"</check>> {{ ucfirst(@activity2) }}</label><br>
                     </repeat>
                 </div>
+                <span class="err">
+                    <check if="{{ isset(@errors['outdoor']) }}">
+                        {{ @errors['outdoor'] }}
+                    </check>
+                </span><br>
             </div>
 
 

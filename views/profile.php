@@ -41,11 +41,18 @@
                     <label class="bold" for="email">Email</label>
                     <input type="email" class="form-control" id="email" name="email">
                 </div>
+                <span class="err">
+                    <check if="{{ isset(@errors['email']) }}">
+                        {{ @errors['email'] }}
+                    </check>
+                </span><br>
+
                 <div class="form-group">
                     <label class="bold" for="states">States</label>
                     <select class="bold custom-select" name="states" id="states">
                         <repeat group="{{ @states }}" value="{{ @state }}">
                             <option  name='states' value="{{ @state }}">{{ @state }}</option>
+                            <check if="{{ @states == @selected }}">selected="selected"</check>>{{ @states }}</option>
                         </repeat>
                     </select>
                 </div>

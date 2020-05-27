@@ -46,16 +46,31 @@
                     <label class="bold" for="firstName">First Name</label>
                     <input type="text" class="form-control" id="firstName" name="firstName">
                 </div>
+                <span class="err">
+                    <check if="{{ isset(@errors['firstName']) }}">
+                        {{ @errors['firstName'] }}
+                    </check>
+                </span><br>
 
                 <div class="form-group">
                     <label class="bold" for="lastName">Last Name</label>
                     <input type="text" class="form-control" id="lastName" name="lastName">
                 </div>
+                <span class="err">
+                    <check if="{{ isset(@errors['lastName']) }}">
+                        {{ @errors['lastName'] }}
+                    </check>
+                </span><br>
 
                 <div class="form-group">
                     <label class="bold" for="age">Age</label>
                     <input type="number" class="form-control" id="age" name="age">
                 </div>
+                <span class="err">
+                    <check if="{{ isset(@errors['age']) }}">
+                        {{ @errors['age'] }}
+                    </check>
+                </span><br>
 
                 <fieldset class="form-group">
 
@@ -77,6 +92,11 @@
                         <label class="bold" for="phone">Phone Number</label>
                         <input type="number" class="form-control" id="phone" name="phone">
                     </div>
+                    <span class="err">
+                    <check if="{{ isset(@errors['phone']) }}">
+                        {{ @errors['phone'] }}
+                    </check>
+                </span><br>
         </div>
     </div>
 

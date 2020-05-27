@@ -94,6 +94,7 @@ $f3-> route('GET|POST /profile', function($f3) {
 
     $f3->set('email', $_POST['email']);
     $f3->set('seeking', $_POST['seeking']);
+    $f3->set('selected', $_POST['state']);
     $f3->set('states', $states);
 
     $view = new Template();
@@ -126,6 +127,8 @@ $f3->route('GET|POST /interests', function($f3) {
         }
     }
 
+    $f3->set('selectedIndoor', $_POST['indoor']);
+    $f3->set('selectedOutdoor', $_POST['outdoor']);
     $f3->set('indoor', $indoor);
     $f3->set('outdoor', $outdoor);
 
