@@ -10,6 +10,11 @@ function getOutdoor() {
     return array('hiking', 'walking', 'biking','climbing', 'swimming','shooting', 'running', 'sports');
 }
 
+function getGender()
+{
+    return array("Male", "Female");
+}
+
 function getStates() {
 
     return array("Alabama",

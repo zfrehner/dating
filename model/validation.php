@@ -1,7 +1,7 @@
 <?php
 
-function validName() {
-    return !empty($name);
+function validName($name) {
+    return !empty($name) && ctype_alpha($name);
 }
 
 
