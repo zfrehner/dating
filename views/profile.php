@@ -39,7 +39,7 @@
             <div class="col">
                 <div class="form-group">
                     <label class="bold" for="email">Email</label>
-                    <input type="email" class="form-control" id="email" name="email">
+                    <input type="email" class="form-control" id="email" name="email" value=" {{ @email }} ">
                 </div>
                 <span class="err">
                     <check if="{{ isset(@errors['email']) }}">
@@ -70,8 +70,17 @@
                             Female
                         </label>
                     </div>
+                    <label class="bold" for="premium">Premium Membership</label>
+                    <div class="form-group">
+                        <label for="premium"><input type="checkbox" name="premium" id="premium">
+                        Sign me up for a Premium Account!
+                        </label>
+
+                    </div>
                 </fieldset>
             </div>
+
+
             <div class="col">
                 <div class="form-group">
                     <label class="bold" for="bio">Biography</label>

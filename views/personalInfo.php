@@ -44,7 +44,7 @@
 
                 <div class="form-group">
                     <label class="bold" for="firstName">First Name</label>
-                    <input type="text" class="form-control" id="firstName" name="firstName">
+                    <input type="text" class="form-control" id="firstName" name="firstName" value=" {{ @firstName }} ">
                 </div>
                 <span class="err">
                     <check if="{{ isset(@errors['firstName']) }}">
@@ -54,7 +54,7 @@
 
                 <div class="form-group">
                     <label class="bold" for="lastName">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" name="lastName">
+                    <input type="text" class="form-control" id="lastName" name="lastName" value=" {{ @lastName }} ">
                 </div>
                 <span class="err">
                     <check if="{{ isset(@errors['lastName']) }}">
@@ -64,7 +64,7 @@
 
                 <div class="form-group">
                     <label class="bold" for="age">Age</label>
-                    <input type="number" class="form-control" id="age" name="age">
+                    <input type="number" class="form-control" id="age" name="age" value=" {{ @age }} ">
                 </div>
                 <span class="err">
                     <check if="{{ isset(@errors['age']) }}">
@@ -90,7 +90,7 @@
 
                     <div class="form-group">
                         <label class="bold" for="phone">Phone Number</label>
-                        <input type="number" class="form-control" id="phone" name="phone">
+                        <input type="number" class="form-control" id="phone" name="phone" value=" {{ @phone }} ">
                     </div>
                     <span class="err">
                     <check if="{{ isset(@errors['phone']) }}">
