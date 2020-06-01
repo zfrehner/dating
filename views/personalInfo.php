@@ -97,6 +97,14 @@
                         {{ @errors['phone'] }}
                     </check>
                 </span><br>
+
+                    <label class="bold" for="premium">Premium Membership</label>
+                    <div class="form-group">
+                        <label for="premium"><input type="checkbox" name="premium" id="premium">
+                            Sign me up for a Premium Account!
+                        </label>
+
+                    </div>
         </div>
     </div>
 

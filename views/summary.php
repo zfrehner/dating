@@ -40,12 +40,12 @@
             <label for="person" class="control-label"><strong>Personal Info</strong></label>
             <div class="col-lg-6" id="person">
                 <ul class="list-group">
-                    <li class="list-group-item">Name: {{ @SESSION.firstName}} {{ @SESSION.lastName}} </li>
-                    <li class="list-group-item">Gender: {{ @SESSION.gender}}</li>
-                    <li class="list-group-item">Age: {{ @SESSION.age}}</li>
-                    <li class="list-group-item">Phone: {{ @SESSION.phone}}</li>
-                    <li class="list-group-item">Email: {{ @SESSION.email}}</li>
-                    <li class="list-group-item">State: {{ @SESSION.states}}</li>
+                    <li class="list-group-item">Name: {{ @SESSION.member->getFname() }} {{ @SESSION.member->getLname() }} </li>
+                    <li class="list-group-item">Gender: {{ @SESSION.member->getGender() }}</li>
+                    <li class="list-group-item">Age: {{ @SESSION.member->getAge() }}</li>
+                    <li class="list-group-item">Phone: {{ @SESSION.member->getPhone() }}</li>
+                    <li class="list-group-item">Email: {{ @SESSION.member->getEmail() }}</li>
+                    <li class="list-group-item">State: {{ @SESSION.member->getState() }}</li>
                     <li class="list-group-item"><check if="{{ isset(@SESSION.indoor) }}">
                             Interests: {{ implode(@SESSION.indoor, ", ") }}, {{ implode(@SESSION.outdoor, ", ") }}
                         </check></li>

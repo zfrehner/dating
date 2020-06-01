@@ -5,7 +5,11 @@ class PremiumMember extends Member
     private $_inDoorInterests;
     private $_outDoorInterests;
 
-    public function __construct($fname, $lname, $age, $gender, $phone)
+    public function __construct($fname = "zach",
+                                $lname = "frehner",
+                                $age = "30",
+                                $gender = "male",
+                                $phone = "123456789")
     {
         parent::__construct($fname, $lname, $age, $gender, $phone);
     }

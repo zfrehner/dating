@@ -13,7 +13,11 @@ class Member
     private $_bio;
 
 
-    public function __construct($fname, $lname, $age, $gender, $phone)
+    public function __construct($fname = "zach",
+                                $lname = "frehner",
+                                $age = "30",
+                                $gender = "male",
+                                $phone = "123456789")
     {
         $this->setFname($fname);
         $this->setLname($lname);
