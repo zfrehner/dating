@@ -28,20 +28,20 @@ $f3->route('GET /', function() {
 
 });
 
-$f3-> route('GET|POST /personalInfo', function($f3) {
+$f3-> route('GET|POST /personalInfo', function() {
 
     $GLOBALS['controller']->personalInfo();
 
 });
 
-$f3-> route('GET|POST /profile', function($f3) {
+$f3-> route('GET|POST /profile', function() {
 
     $GLOBALS['controller']->profile();
 
 });
 
 //sign up route
-$f3->route('GET|POST /interests', function($f3) {
+$f3->route('GET|POST /interests', function() {
 
     $GLOBALS['controller']->interests();
 
